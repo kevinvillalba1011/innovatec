@@ -1,0 +1,3 @@
+<app-login-modal *ngIf="!isLoggedIn" (loginSuccess)="onLoginSuccess()"></app-login-modal>
+<app-team-dashboard *ngIf="isLoggedIn && isBoss"></app-team-dashboard>
+<app-dashboard *ngIf="isLoggedIn && !isBoss"></app-dashboard>
